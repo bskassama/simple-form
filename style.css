@@ -10,4 +10,85 @@ footer {
     padding: 15px 5px;
     font-size: 0.8em;
     color: #666666;
+    text-align: center
+}
+
+label {
+    width: 120px;
+    padding-right: 0;
+    text-align: right;
+    float: left;
+    margin-bottom: 1px;
+    margin-right: 5px;
+}
+
+body {
+    margin-left: 15px;
+    margin-right: auto;
+}
+
+fieldset {
+    width: 350px;
+    border: 2px ridge grey;
+    float: none;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+input[type="submit"] {
+    margin-left: 125px;
+    margin-bottom: 100px;
+}
+
+input[type="text"] {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+input[type="email"] {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    label {
+        width: 120px;
+        padding-right: 0;
+        text-align: right;
+        float: left;
+    }
+    fieldset {
+        width: 350px;
+        max-width: inherit;
+        border: 2px ridge grey;
+        float: none;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    input[type="submit"] {
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    label {
+        width: 100%;
+        padding-right: 0;
+        text-align: left;
+        float: left;
+        display: block;
+    }
+    input {
+        text-align: left;
+        width: auto;
+    }
+    input[type="submit"] {
+        margin-left: 0;
+        margin-bottom: 20px;
+        width: inherit;
+    }
+    fieldset {
+        width: 80%;
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
 }
